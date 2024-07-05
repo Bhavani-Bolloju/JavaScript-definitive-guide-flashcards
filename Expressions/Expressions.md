@@ -1,6 +1,7 @@
 ## Expressions in JavaScript
 
 <details>
+<br/>
   <summary>What is an expression in JavaScript, give an example</summary>
 
 An expression is a phrase, when evaluated produces a value in JavaScript
