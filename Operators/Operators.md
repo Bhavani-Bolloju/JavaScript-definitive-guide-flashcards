@@ -14,3 +14,23 @@
   - unary - !(not), binary(+,-), ternary(?: )
 
 </details>
+<details>
+<br/>
+  <summary>what is an <kbd>lvalue</kbd> expression?</summary>
+
+- Expression that can exists on the left side of assignment operator, lValue refers to left value.
+- It refers to the memory location that can hold a value, it means we can assign a value to an lvalue.
+- lvalue designates a location where data can be stored or modified.
+- Example of ivalue are variable name, array elements, object properties.
+
+</details>
+
+
+
+
+
+
+
+
+
+
