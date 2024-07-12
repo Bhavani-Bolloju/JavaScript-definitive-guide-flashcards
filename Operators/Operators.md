@@ -123,10 +123,46 @@
 
 <details>
 <br/>
-  <summary>what do bitwise operators do?</summary>
+  <summary>Explain Bitwise operators in JavaScript?</summary>
 
   - Bitwise operators deal with numeric values at binary level, manipulating individual bits of a numeric value.
   - Providing way to perform operations at a low level.
 </details>
+
+<details>
+<br/>
+  <summary>Purpose of bitwise operators?</summary>
+
+  - They are used in low level programming, where direct manipulation of bits is required.
+  - Example includes system programming, device drivers, where direct control over memory and hardware is required.
+  - Bitwise operators can be used for memory management, creating data structure and using memory in constrained environment.
+  
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
