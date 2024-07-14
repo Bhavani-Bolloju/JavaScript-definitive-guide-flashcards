@@ -15,7 +15,7 @@
 
 </details>
 <details>
-<br/>
+<br/> 
   <summary>what is an <kbd>lvalue</kbd> expression?</summary>
 
 - Expression that can exists on the left side of assignment operator, lValue refers to left value.
@@ -139,11 +139,68 @@
   
 </details>
 
+<details>
+<br/>
+  <summary>Two catergories of bitwise operators and what are they?</summary>
+  
+  #### Logical Bitwise operators:
+  - perform boolean algebra on the operands,means they perform boolean logic on each bit of the numeric value.
+  - &(AND), |(OR), ^(XOR), ~(NOT).
+  #### Shift operators:
+  - These operators shift bits to the right and left;
+  - <kbd>>></kbd>(right shift), <kbd><<</kbd>(left shift), <kbd>>>></kbd> (shift right with zero fill).
+</details>
 
+<details>
+<br/>
+  <summary>How do bitwise Logical operators works?</summary>
 
+  - <kbd>&</kbd>(AND): Returns a bit set to 1 if both corresponding bits are 1
+    <br/>
+    **Example**: 0101 & 0011 = 0001
+  - <kbd>|</kbd>(OR): Returns a bit set to 1 if at least one of the corresponding bits is 1
+    <br/>
+    **Example**: 0101 | 0011 = 0111
+  - <kbd>^</kbd>(XOR): Returns a bit set to 1 if one (but not both) of the corresponding bits is 1
+    <br/>
+    **Example**: 0101 ^ 0011 = 0110
+  - <kbd>~</kbd>(NOT): Inverts all the bits of the operand
+    <br/>
+    **Example**: ~0101 = 1010 
+  
+</details>
+<details>
+<br/>
+  <summary>Left and right shift operators equivalent to mathematical operations in javascript?</summary>
 
+  - Left shifting a number by "n" positions is equivalent to multiplying the number by <kbd>2**n</kbd>.
+    <br/>
+    **Example:** 5 << 3 ⇒ 5* 2^3
+  - Right shifting a number by "n" positions is equivalent to dividing the number by <kbd>2^n</kbd> and discarding any remainder (floor division).
+    <br/>
+    **Example:** 5 >> 3 ⇒ 5 / 2 ^ 3
+  
+</details>
 
+<details>
+<br/>
+  <summary>How to Perform base conversions in javascript (from decimal to binary / hexa or vice versa)?</summary>
+  
+  - Numeric values in javascript are represented using <kbd>base 10</kbd> by default, but we can convert numeric value to different base.
+    -  call **toString()** method on any number and pass the desired base(2-base,8-octal,16-hexadecimal) as an argument.
+      <br/>
+</details>
 
+<details>
+<br/>
+  <summary>How to convert the numbers of any base to the decimal number( base 10)?</summary>
+  
+  - we can convert binary(base 2), hexa(base 16) and octal(base 8) or any base representation to a decimal value(base 10) using **parseIn** function.
+  - It takes two arguments, the string representation of the number and the current base value.
+
+</details>
+
+### Relational Expression and comparison operators
 
 
 
