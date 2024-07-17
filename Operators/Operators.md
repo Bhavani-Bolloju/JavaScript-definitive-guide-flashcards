@@ -202,17 +202,119 @@
 
 ### Relational Expression and comparison operators
 
-will add soon.............
+<details>
+<br/>
+  <summary>What are the two operators that we use to check if both the values are equal?</summary>
+  
+  - we have strict equality and relaxed equality to check if both the values are same, based on different definition of sameness:
+
+  - **Strict equality(===)** - It doesn’t perform type conversion and returns true only of both the operands are of same type and value.
+
+  - **Relaxed equality(==)** - It does perform type conversion and try to convert the operands to same type before making the comparison.
+
+</details>
+
+<details>
+<br/>
+  <summary>Method to make local comparison of strings in alphabetical order and what’s the use of the method?</summary>
+  
+  - **String.localCompare()** — is a string comparing algorithm, that performs local-sensitive string comparison, based on rules defined by a particular language.
+  - **Useful:** when comparing strings that respect language specific sorting rules, such as handling accented characters correctly.
+  - sorting strings in a way that is sensitive to user’s locale.
+</details>
+
+<details>
+<br/>
+  <summary>Explain the possible values the local comparison method returns?</summary>
+  
+  - <kbd>-ve</kbd> number indicates that the reference string comes before compare string.
+  - <kbd>+ve</kbd> number indicates that the reference string comes after compare string.
+  - <kbd>0</kbd> indicates that both the reference and compare strings are equivalent.
+</details>
+
+<details>
+<br/>
+  <summary>what type of values does comparison operator expect?</summary>
+  
+  - Comparison operator can accept operands of any type, but comparison can be done only between string and number type, so operand of neither type are     converted to either number or string.
+  - It also allows to mix operands of different types like numeric and BigInt values, unlike arithmetic operator that doesn’t support mixed operands.
+</details>
+
+<details>
+<br/>
+  <summary>How are string compared in javascript?</summary>
+  
+  - String comparison is done character by character, using unicode value of the character at that corresponding position
+  - The comparison is lexicographic, means it follows the order of characters in a dictionary,characters are also case-sensitive, uppercase characters have low   value than to the lowercase characters.
+</details>
+
+<details>
+<br/>
+  <summary>Explain <kbd>in</kbd> operator</summary>
+  
+  - <kbd>in</kbd> operator checks if particular property name in the form of a string exists in the object.
+  - If the left operand is a number, it checks if that particular index exists in the array,not the value itself.
+</details>
+
+<details>
+<br/>
+  <summary>Explain <kbd>instanceOf</kbd> operator</summary>
+  
+  - This operator is used to check if the object is an instance of particular class or a constructor function.
+  - check the objects prototype chain to find constructor’s prototype.
+  - The right side operand needs to be a class or a function otherwise typeError is thrown
+  - If the left side operand is not an object, false is returned.
+</details>
+
+<details>
+<br/>
+  <summary>Explain Prototype Chain</summary>
+  
+  - Every object has [[prototype]] internal property, also can refer to as <kbd>_ _proto_ _</kbd> , this proto points to another object, which is objects prototype.
+  - when object is creates it’s prototype value is set to the prototype value of the class/constuctor function that been used to create the object.
+  - the creates a chain of objects linked by their prototype forming “prototype chain”. ****
+  - the top of the chain is the Object.prototype.
+</details>
 
 
+### Logical Expressions
+
+<details>
+<br/>
+  <summary>Explain three levels of understanding of <kbd>&&(AND)</kbd>operator</summary>
+  
+  - **basic level** - AND operator returns true if and only if two values are true otherwise false.
+  - **second level** -any value in javascript can be either truthy or falsy, AND opertor doesn’t expect it operands to be boolean, if both the operands are truthy the, truthy value is returned.
+  - **third level** - JavaScript takes multiple values, evaluate the operands from left to right and if the value evaluates to false, it short-circuites and returns the value without evaluating any further, otherwise evaluates the right operand and returns the value.
+</details>
+
+<details>
+<br/>
+  <summary>what is short circuiting?</summary>
+  
+  - It is the behaviour of boolean operands to stop evaluating the expression as soon as the final result is determined.
+  - Result of operation become the value of entire expression.
+</details>
+
+<details>
+<br/>
+  <summary>what is the main purpose of the <kbd>OR(||)</kbd> logic operator?</summary>
+  
+  - The purpose is to return the first truthy value found from the set of alternate options.
+  - It was also used to set default values for the parameters and properties that don’t have values.
+</details>
+
+<details>
+<br/>
+  <summary>What is a <kbd>not not (!!)</kbd> operator and what does it do?</summary>
+  
+  - Every value in javascript is either a truthy or a falsy value, we can use <kbd>not not (!!)</kbd> operator to convert any value into its corresponding boolean representation.
+  - First negates to the truthiness or falsiness of the value, then negates again, the result is the boolean value.
+</details>
 
 
-
-
-
-
-
-
+### Assignment expressions and Evaluation expression
+will add soon.....
 
 
 
